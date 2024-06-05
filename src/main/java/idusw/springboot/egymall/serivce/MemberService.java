@@ -25,7 +25,7 @@ public interface MemberService {
                 .build();
         return entity;
     }
-    
+
     default MemberDto entityToDto(MemberEntity entity) {
         MemberDto memberDto = MemberDto.builder()
                 .idx(entity.getIdx())
